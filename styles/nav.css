@@ -1,0 +1,25 @@
+nav ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    width: 40vw;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    padding: 20px; 
+}
+
+/* Navigation */
+
+  nav a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+  

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Our amazing blog</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+     <!-- _includes/nav.njk -->
+ <nav>
+    <ul>
+      
+        <li><a class="nav-item" href="/">Home</a></li>
+      
+        <li><a class="nav-item" href="/about/">About</a></li>
+      
+    </ul>
+  </nav>
+    <!--- injects data content from our markdown file ---> 
+    <main>
+        
+   
+
+   
+  <article>
+    <h2>First Post</h2>
+    <p><em>October 9, 2025</em></p>
+    <img src="/Photos/09.jpg" alt="First Photo" class="post-image">
+<p>The construction site is in the foundation stage, where workers are reinforcing the excavated area with steel rebar, concrete forms, and shoring supports. They’re preparing the base structure that will support the future building above ground.</p>
+
+  </article>
+
+
+        <h2>Latest Posts</h2>
+        <ul>
+            <!-- loops through all of our md files with the tag 'post' --> 
+        
+        <li><a href="/post/01-first/">First Post</a> 
+          – October 9, 2025
+        </li>
+        
+        <li><a href="/post/02-secound/">Second Post</a> 
+          – October 10, 2025
+        </li>
+        
+        <li><a href="/post/03-third/">Third Post</a> 
+          – October 11, 2025
+        </li>
+        
+        <li><a href="/post/04-fourth/">Fourth Post</a> 
+          – October 12, 2025
+        </li>
+        
+        <li><a href="/post/05-Fifth/">Fifth Post</a> 
+          – October 15, 2025
+        </li>
+        
+        </ul>
+    </main>
+    
+     <!-- _includes/footer.njk -->
+ <footer>
+    <p>Copyright © 2025</p>
+  </footer>
+
+  </body>
+</html>
