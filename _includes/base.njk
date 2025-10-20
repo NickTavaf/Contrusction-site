@@ -5,7 +5,7 @@
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ 'styles/styles.css' | prefixedUrl }}">
   </head>
-  <body>
+  <body class="{{ page.fileSlug }}">
     {% include "nav.njk" %}
     <!--- injects data content from our markdown file ---> 
     <main>

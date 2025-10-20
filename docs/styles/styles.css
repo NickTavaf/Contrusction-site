@@ -1,4 +1,5 @@
 @import url(nav.css);
+@import url('./about.css');
 
 /* Reset defaults */
 * {
@@ -6,16 +7,21 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
 
   body {
     background-color: #000;
+    background-image: url('/Photos/Stripes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
     color: #fff;
     font-family: "Didot", "Bodoni MT", serif;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+    z-index: -1;
   }
   
 
@@ -38,6 +44,8 @@
   
 p {
     text-indent: 2rem;
+    padding-right: 10vh;
+   
   }
  
   
@@ -81,41 +89,42 @@ p {
   }
 
   .about-image{
-    width: 40vh;
-    height: 60vh;
-    margin-left: 4vh;
+    width: 35vh;
+    height: 42vh;
+    margin-left: -15vh;
     margin-top: 3vh;
     margin-bottom: 2vh;
   }
 
   .SoundLevel-image{
-    width: 60vh;
-    height: 60vh;
-    margin-left: 10vh;
-    margin-top: 10vh;
-    margin-bottom: 2vh;
+    width: 40vh;
+    height: 35vh;
+    margin-left: -15vh;
+    margin-top: 12vh;
+    margin-bottom: 10vh;
   }
 
   .image-row {
     display: flex;
     justify-content: center; /* centers the two images horizontally */
     align-items: flex-start; /* aligns them by the top edge */
-    gap: 3vh;                /* space between the two images */
-    margin-top: 3vh;
+    gap: 20vh;                /* space between the two images */
+    margin-top: 2vh;
   }
 
   .post-image5{
-    width: 50vh;
-    height: 60vh;
-    margin-left: 10vh;
+    width: 45vh;
+    height: 50vh;
+    margin-left: -29.7vh;
     margin-top: 3vh;
     margin-bottom: 2vh;
+   
   }
   
   .post-image5-2{
-    width: 50vh;
-    height: 60vh;
-    margin-left: 10vh;
+    width: 45vh;
+    height: 50vh;
+    margin-left: -13vh;
     margin-top: 3vh;
     margin-bottom: 2vh;
   }

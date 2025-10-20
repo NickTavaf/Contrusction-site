@@ -13,14 +13,14 @@ module.exports = function (eleventyConfig) {
     const isProduction = process.env.ELEVENTY_ENV === "production";
 
     // Set pathPrefix once as a global
-    eleventyConfig.addGlobalData("pathPrefix", isProduction ? "/eleventy-practice/" : "/");
+    eleventyConfig.addGlobalData("pathPrefix", isProduction ? "/Contrusction-site/" : "/");
 
     eleventyConfig.addPassthroughCopy("Photos");
 
     // Creating a filter for URLs for GH Pages
     eleventyConfig.addFilter("prefixedUrl", (url, prefix) => {
         // Use the prefix from argument or fallback to global pathPrefix
-        const finalPrefix = prefix || (isProduction ? "/eleventy-practice/" : "/");
+        const finalPrefix = prefix || (isProduction ? "/Contrusction-site/" : "/");
         // Remove leading slash from URL, then prepend prefix
         return finalPrefix + url.replace(/^\/+/, "");
     });
